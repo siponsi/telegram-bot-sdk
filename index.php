@@ -2,14 +2,20 @@
 require 'vendor/autoload.php';
 use Telegram\Bot\Api;
 
-$telegram = new Api('1231883463:AAFjcudIcpcB3MIvyYAodAsMpG_yf5JK4cs');
+$telegram = new Api('1231883463:AAFjcudIcpcB3MIvyYAodAsMpG_yf5JK4cs', true);
 
 $response = $telegram->getMe();
 
 $botId = $response->getId();
 $firstName = $response->getFirstName();
 $username = $response->getUsername();
-echo "$botId $firstName $username";
+// echo "$botId $firstName $username";
+$response = $telegram->sendMessage([
+	'chat_id' => 'CHAT_ID', 
+	'text' => 'Hello World'
+]);
+
+$messageId = $response->getMessageId();
 // $telegram
 //    ->setAsyncRequest(true)
 //    ->sendPhoto(['chat_id' => 'CHAT_ID', 'photo' => 'path/to/photo.jpg']);

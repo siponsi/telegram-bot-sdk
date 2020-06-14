@@ -15,7 +15,7 @@ $response = $telegram->sendMessage([
 	'text' => 'Hello World'
 ]);
 
-$messageId = $response->getMessageId();
+// $messageId = $response->getMessageId();
 // $telegram
 //    ->setAsyncRequest(true)
 //    ->sendPhoto(['chat_id' => 'CHAT_ID', 'photo' => 'path/to/photo.jpg']);

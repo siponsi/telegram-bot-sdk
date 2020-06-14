@@ -13,6 +13,7 @@ $telegram = new Api('1231883463:AAFjcudIcpcB3MIvyYAodAsMpG_yf5JK4cs');
 // $telegram
 //    ->setAsyncRequest(true)
 //    ->sendPhoto(['chat_id' => 'CHAT_ID', 'photo' => 'path/to/photo.jpg']);
-
+$url=  ['url' => "https://tbotsdk.herokuapp.com"];
+$telegram->setWebhook($url);
 $updates = $telegram->getWebhookUpdates();
 var_dump($updates);

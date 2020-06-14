@@ -10,3 +10,9 @@ $botId = $response->getId();
 $firstName = $response->getFirstName();
 $username = $response->getUsername();
 echo "$botId $firstName $username";
+// $telegram
+//    ->setAsyncRequest(true)
+//    ->sendPhoto(['chat_id' => 'CHAT_ID', 'photo' => 'path/to/photo.jpg']);
+
+$updates = $telegram->getWebhookUpdates();
+echo $updates;

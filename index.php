@@ -15,4 +15,4 @@ echo "$botId $firstName $username";
 //    ->sendPhoto(['chat_id' => 'CHAT_ID', 'photo' => 'path/to/photo.jpg']);
 
 $updates = $telegram->getWebhookUpdates();
-echo $updates;
+print_r($updates);

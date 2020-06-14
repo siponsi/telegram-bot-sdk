@@ -9,4 +9,4 @@ $response = $telegram->getMe();
 $botId = $response->getId();
 $firstName = $response->getFirstName();
 $username = $response->getUsername();
-echo $botId;
+echo "$botId $firstName $username";

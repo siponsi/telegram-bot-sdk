@@ -21,6 +21,12 @@ if (isset($ui) & $ui <> null){
         'chat_id' => "$ci",
         'text' => "the stupid ot wrote this (el estudido de oti escribio esto) $t desde $ci"
     ]);
+    $response = $telegram->sendPhoto([
+        'chat_id' => "$ci",
+        'photo' => 'https://ibb.co/BtWqvhz',
+        'caption' => 'Some caption'
+    ]);
+
 
 }
 // $message= $updates->getMessage();

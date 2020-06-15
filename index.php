@@ -23,7 +23,7 @@ if (isset($ui) & $ui <> null){
     ]);
     $response = $telegram->sendPhoto([
         'chat_id' => "$ci",
-        'photo' => 'https://ibb.co/BtWqvhz',
+        'photo' => 'https://siponsi.github.io/a.JPG',
         'caption' => 'Some caption'
     ]);
 

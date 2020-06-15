@@ -14,10 +14,11 @@ $updates = $telegram->getWebhookUpdates();
 $m=$updates->getMessage();
 $ui=$updates->getUpdateId();
 $t=$m->getText();
+$c=$m->getChat();
 if (isset($ui) & $ui <> null){
     $response = $telegram->sendMessage([
         'chat_id' => '843856890',
-        'text' => "El bobo de Diosvel escribio esta estudides $t"
+        'text' => "the stupid ot wrote this (el estudido de oti escribio esto) $t desde $c"
     ]);
 
 }

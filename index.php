@@ -11,11 +11,12 @@ $telegram = new Api('1231883463:AAFjcudIcpcB3MIvyYAodAsMpG_yf5JK4cs', true);
 // $username = $response->getUsername();
 // echo "$botId $firstName $username";
 $updates = $telegram->getWebhookUpdates();
+$m=$updates->getMessage();
 $ui=$updates->getUpdateId();
 if (isset($ui) & $ui <> null){
     $response = $telegram->sendMessage([
         'chat_id' => '843856890',
-        'text' => 'agua'
+        'text' => "$m"
     ]);
 
 }

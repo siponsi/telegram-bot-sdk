@@ -13,10 +13,11 @@ $telegram = new Api('1231883463:AAFjcudIcpcB3MIvyYAodAsMpG_yf5JK4cs', true);
 $updates = $telegram->getWebhookUpdates();
 $m=$updates->getMessage();
 $ui=$updates->getUpdateId();
+$t=$m->getText();
 if (isset($ui) & $ui <> null){
     $response = $telegram->sendMessage([
         'chat_id' => '843856890',
-        'text' => "$m"
+        'text' => "$t"
     ]);
 
 }

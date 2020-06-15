@@ -17,7 +17,7 @@ $t=$m->getText();
 if (isset($ui) & $ui <> null){
     $response = $telegram->sendMessage([
         'chat_id' => '843856890',
-        'text' => "$t"
+        'text' => "El bobo de Diosvel escribio esta estudides $t"
     ]);
 
 }

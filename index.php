@@ -18,7 +18,7 @@ $c=$m->getChat();
 $ci=$c->getId();
 if (isset($ui) & $ui <> null){
     $response = $telegram->sendMessage([
-        'chat_id' => '843856890',
+        'chat_id' => "$ci",
         'text' => "the stupid ot wrote this (el estudido de oti escribio esto) $t desde $ci"
     ]);
 

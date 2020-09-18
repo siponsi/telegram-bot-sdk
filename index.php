@@ -26,5 +26,5 @@ $id= 843856890;
 //}
 $response = $telegram->sendMessage([
     'chat_id' => "$id",
-    'text' => "Gracias por escribirnos"
+    'text' => "Hay internet Stupid!!!"
 ]);

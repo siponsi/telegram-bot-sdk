@@ -24,7 +24,7 @@ if (isset($ui) & $ui <> null){
     $response = $telegram->sendPhoto([
         'chat_id' => "$ci",
         'photo' => 'https://siponsi.github.io/a.JPG',
-        'caption' => 'Some caption'
+        'caption' => 'Some caption cambio iPhone'
     ]);
 
 
@@ -40,3 +40,4 @@ if (isset($ui) & $ui <> null){
 // $updates = $telegram->getWebhookUpdates();
 // $messageId = $response->getMessageId();
 // var_dump($messageId);
+// probando desde el iPhone 
